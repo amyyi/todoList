@@ -1,0 +1,11 @@
+html, body {
+    @mixin font-weight 300;
+    height: 100%;
+    font-family: "Lato", "Apple LiGothic Medium", "Microsoft JhengHei", Arial, sans-serif;
+    color: $color-white;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    //background-color: $color-dark;
+    background: linear-gradient(to right, rgb(211, 131, 18), rgb(168, 50, 121));  
+}

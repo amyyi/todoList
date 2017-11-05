@@ -1,0 +1,38 @@
+.list {
+    background: linear-gradient(to top right, #C0C0C0 70%, rgba(255, 255, 255, .2) 100%);
+    border-radius: 4px;
+
+    ul {
+        @mixin ulStyle 30px, 0px, none;
+        li {
+            @mixin liStyle 3%, 10%, 30px;
+            &:hover {
+              color : #5d6165;
+            }
+        }
+    }
+    .ulStyle li {
+        display: flex;
+        &:hover {
+            color : #fff;
+            background: linear-gradient(to right, #5d6165 30%, rgba(255, 255, 255, 0) 100%);
+        }
+        .col-5 {    lost-column: 5/12;}
+    }
+     .ulStyle .active {
+        color : #5d6165;
+     }
+    i span {
+        @mixin iSpan 10px;
+    }
+}
+.col-4 {
+    lost-column: 1/4;
+}
+.list.col-4:nth-child(1n) {
+    margin-right: 0;
+}
+.list-edit {
+    margin-left: 12%;
+    letter-spacing: 1px;
+}

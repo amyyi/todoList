@@ -1,0 +1,25 @@
+@define-mixin background-loading $top: 0px, $size: 20px, $background-color: #fff, $loading-color: #BDC0BA {
+    top: $top;
+    background: linear-gradient(to right, $loading-color 10%, rgba(255, 255, 255, 0) 42%);
+}
+
+@define-mixin ulStyle $margin-top: 30px, $padding-left: 0px, $list-style: none {
+    margin-top : $margin-top;
+    padding-left : $padding-left;
+    list-style : $list-style;
+}
+@define-mixin liStyle $margin-bottom: 3%, $padding-left: 10%, $line-height: 30px {
+    margin-bottom : $margin-bottom;
+	padding-left : $padding-left;
+	line-height : $line-height;
+}
+@define-mixin iSpan $margin-left:10px {
+	margin-left : $margin-left;
+} 
+@define-mixin totalWidth $width:94% {
+    width:$width;
+}
+@define-mixin bottomLine $border-bottom: 1px solid #efe6e6, $line-height: 29px {
+    border-bottom : $border-bottom;
+    line-height : $line-height;
+}

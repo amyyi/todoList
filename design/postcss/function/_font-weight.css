@@ -1,0 +1,23 @@
+@define-mixin font-weight $number {
+    font-weight: $number;
+    @if $number == 100 {
+        @mixin browser-hack safari {
+            font-weight: 300;
+        }
+        @mixin browser-hack ie {
+            font-weight: 300;
+        }
+    }
+    @else {
+        @mixin browser-hack safari {
+            @if $number == 300 {
+                font-weight: 400;
+            }
+            @else {
+                @if $number == 400 {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

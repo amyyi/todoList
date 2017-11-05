@@ -1,0 +1,53 @@
+.signbox {
+    display: none;
+}
+.signboxin.show{
+    position: absolute;
+    opacity: .7;
+    display: flex;
+    top: 50%;
+    left: 35%;
+    min-width: 543px;
+    min-height: 201px;
+    justify-content: center;
+    background: #000;
+}
+.signbox-form {
+    text-align: center;
+}
+.form-group {
+    padding-top: 13px;
+}
+.form-input {
+    width: 100%;
+    margin-right: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #dab7b7;
+    border-right: 0px;
+    text-align: center;
+    color: #fff;
+    background: none;
+}
+.signbox-submit {
+    margin-top: 11%;
+    border-radius: 0px;
+    border: 1px solid #333;
+    min-width: 89px;
+    min-height: 35px;
+    padding: 0px;
+    color: #fff;
+}
+.submit {
+    background: #EB7A77;
+    &:hover {
+        background: #bd403c;
+    }
+}
+.cancel {
+    background: #91B493;
+    &:hover {
+        background: #4eaf53;
+    }
+}
+
